@@ -1,0 +1,234 @@
+/* {
+    border: solid black .005px;
+}*/
+body {
+    font-family: "Gill Sans";
+}
+.container-fluid, .row, .col, .col-xs-1, .col-sm-1, .col-md-2, .col-lg-3, .col-xs-10, .col-sm-10, .col-md-8, .col-lg-6 {
+    margin: 0; padding: 0;
+}
+/* nav */
+.navbar {
+    color: white;
+    background: orangered;
+    position: fixed;
+    z-index: 1;
+    letter-spacing: .3vw
+}
+.navbar a {
+    color: white;
+    font-weight: 100;
+}
+#osu, #sam {
+    padding-top: 10vh;
+}
+#sam {
+    color: black;
+    text-align: right;
+}
+#samHead {
+    padding-left: 1vw;
+    padding-top: 2.5vh;
+}
+#ul {
+    display: flex;
+    justify-content: space-between;
+}
+/* nav */
+#work, #print, #school, #volunteer, #contact {
+    padding-top: 15vh;
+}
+#summary {
+    padding-top: 2.5vh;
+    font-weight: 350;
+    font-size: 2.35vh;
+}
+#goto1, #goto2 {
+    display: block; 
+}
+#goto1 {
+    margin-top: 30vh;
+}
+#goto2 {
+    margin-top: 5vh;
+}
+#line {
+    letter-spacing: .109em;
+    line-height: 1.1em;
+    margin-bottom: 1.25vh;
+    border: solid rgb(223, 222, 222) .02px;
+}
+h1 {
+    color: rgb(70, 70, 70);
+    font-weight: 500;
+    letter-spacing: .2em;
+}
+#position {
+    letter-spacing: .15em;
+    line-height: 2.8vh;
+    padding-bottom: .8vh;
+}
+#place {
+    color: grey;
+    font-size: .85em;
+    letter-spacing: .08em;
+    line-height: 2.5vh;
+    padding-bottom: 1vh;
+    padding-top: 0;
+}
+#bottom {
+    padding-bottom: 25vh;
+}
+
+/* XL XL XL XL XL XL XL XL XL XL XL XL */
+/* XL XL XL XL XL XL XL XL XL XL XL XL */
+@media (min-width: 1200px) {
+    .navbar {
+        margin: 0 25vw;
+    }
+    #ul {
+        padding: 5vh 0 1vh 0;
+        width: 48vw;
+    }
+    #nav {
+        font-size: 1.3em;
+    }
+    #osu {
+        font-size: 1.6vw;
+    }
+    #sam {
+        font-size: 2vw;
+    }
+    #samHead {
+        width: 22.5vw;
+    }
+    #home, #print, #school, #volunteer, #contact {
+        margin-top: -10vh;
+    }
+}
+/* XL XL XL XL XL XL XL XL XL XL XL XL */
+/* XL XL XL XL XL XL XL XL XL XL XL XL */
+
+
+/* LARGE LARGE LARGE LARGE LARGE LARGE */
+/* LARGE LARGE LARGE LARGE LARGE LARGE */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .navbar {
+        margin: 0 25vw;
+    }
+    #ul {
+        padding: 5vh 0 1vh 0;
+        width: 47vw;
+    }
+    #nav {
+        font-size: 1.1em;
+    }
+    #osu {
+        font-size: 1.6vw;
+    }
+    #sam {
+        font-size: 2vw;
+    }
+    #samHead {
+        width: 22.5vw;
+    }
+    #home, #print, #school, #volunteer, #contact {
+        margin-top: -10vh;
+    }
+}
+/* LARGE LARGE LARGE LARGE LARGE LARGE */
+/* LARGE LARGE LARGE LARGE LARGE LARGE */
+
+
+/* MED MED MED MED MED MED MED MED MED */
+/* MED MED MED MED MED MED MED MED MED */
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar {
+        margin: 0 8.5vw;
+    }
+    #ul {
+        padding: 5vh 0 1vh 0;
+        width: 78vw;
+    }
+    #nav {
+        font-size: 1.1em;
+    }
+    #osu {
+        font-size: 2.75vw;
+    }
+    #sam {
+        width: 20vw;
+        font-size: 3vw;
+    }
+    #samHead {
+        width: 35vw;
+    }
+    #home, #print, #school, #volunteer, #contact {
+        margin-top: -10vh;
+    }
+}
+/* MED MED MED MED MED MED MED MED MED */
+/* MED MED MED MED MED MED MED MED MED */
+
+
+/* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
+/* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
+@media (min-width: 576px) and (max-width: 767px) {
+    .navbar {
+        margin: 0 8.5vw;
+    }
+    #ul {
+        padding: 5vh 0 1vh 0;
+        width: 75vw;
+    }
+    #nav {
+        font-size: 1em;
+    }
+    #osu {
+        font-size: 3vw;
+    }
+    #sam {
+        width: 30vw;
+    }
+    #samHead {
+        width: 35vw;
+    }
+    #home, #print, #school, #volunteer, #contact {
+        margin-top: -10vh;
+    }
+}
+/* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
+/* SSSSSSSSSSSSSSSSSSSSSSSSSS5SSSSSSSSS */
+
+
+/* XS XS XS XS XS XS XS XS XS */
+/* XS XS XS XS XS XS XS XS XS */
+@media (max-width: 575px) {
+
+    #ul {
+        padding: 5vh 0 0.25vh 0;
+        width: 92vw;
+    }
+    #nav {
+        font-size: .9em;
+    }
+    #osu {
+        font-size: 3.5vw;
+    }
+    #sam {
+        font-size: 4.5vw;
+        width: 20vw;
+    }
+    #samHead {
+        width: 45vw;
+    }
+    #home, #work, #print, #school, #volunteer, #contact {
+        padding-left: 2.5vw;
+        padding-right: 2.5vw;
+    }
+    #work, #print, #school, #volunteer, #contact {
+        margin-top: -9vh;
+    }
+}
+/* XS XS XS XS XS XS XS XS XS */
+/* XS XS XS XS XS XS XS XS XS */
