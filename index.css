@@ -19,9 +19,6 @@ body {
     color: white;
     font-weight: 100;
 }
-#osu, #sam {
-    padding-top: 10vh;
-}
 #sam {
     color: black;
     text-align: right;
@@ -36,7 +33,7 @@ body {
 }
 /* nav */
 #work, #print, #school, #volunteer, #contact {
-    padding-top: 15vh;
+    margin-top: -10vh;
 }
 #summary {
     padding-top: 2.5vh;
@@ -45,12 +42,6 @@ body {
 }
 #goto1, #goto2 {
     display: block; 
-}
-#goto1 {
-    margin-top: 30vh;
-}
-#goto2 {
-    margin-top: 5vh;
 }
 #line {
     letter-spacing: .109em;
@@ -102,8 +93,11 @@ h1 {
     #samHead {
         width: 22.5vw;
     }
-    #home, #print, #school, #volunteer, #contact {
-        margin-top: -10vh;
+    #goto1 {
+        margin-top: 15vh;
+    }
+    #goto2 {
+        margin-top: 15vh;
     }
 }
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
@@ -132,8 +126,11 @@ h1 {
     #samHead {
         width: 22.5vw;
     }
-    #home, #print, #school, #volunteer, #contact {
-        margin-top: -10vh;
+    #goto1 {
+        margin-top: 12.5vh;
+    }
+    #goto2 {
+        margin-top: 12.5vh;
     }
 }
 /* LARGE LARGE LARGE LARGE LARGE LARGE */
@@ -163,8 +160,11 @@ h1 {
     #samHead {
         width: 35vw;
     }
-    #home, #print, #school, #volunteer, #contact {
-        margin-top: -10vh;
+    #goto1 {
+        margin-top: 15vh;
+    }
+    #goto2 {
+        margin-top: 15vh;
     }
 }
 /* MED MED MED MED MED MED MED MED MED */
@@ -193,8 +193,11 @@ h1 {
     #samHead {
         width: 35vw;
     }
-    #home, #print, #school, #volunteer, #contact {
-        margin-top: -10vh;
+    #goto1 {
+        margin-top: 15vh;
+    }
+    #goto2 {
+        margin-top: 13vh;
     }
 }
 /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
@@ -226,8 +229,11 @@ h1 {
         padding-left: 2.5vw;
         padding-right: 2.5vw;
     }
-    #work, #print, #school, #volunteer, #contact {
-        margin-top: -9vh;
+    #goto1 {
+        margin-top: 13vh;
+    }
+    #goto2 {
+        margin-top: 12vh;
     }
 }
 /* XS XS XS XS XS XS XS XS XS */
