@@ -37,7 +37,8 @@ body {
 }
 #summary {
     padding-top: 2.5vh;
-    font-size: 2.35vh;
+    font-size: 2.2vh;
+    letter-spacing: .05em;
 }
 #goto1, #goto2 {
     display: block; 
