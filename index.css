@@ -32,7 +32,7 @@ body {
     justify-content: space-between;
 }
 /* nav */
-#work, #pub, #research, #teach, #contact {
+#pub, #research, #teach, #contact {
     margin-top: -10vh;
 }
 #summary {
@@ -231,7 +231,7 @@ h1 {
     #samHead {
         width: 45vw;
     }
-    #profile, #research, #teach, #contact {
+    #profile, #pub, #research, #teach, #contact {
         padding-left: 2.5vw;
         padding-right: 2.5vw;
     }
