@@ -32,12 +32,11 @@ body {
     justify-content: space-between;
 }
 /* nav */
-#work, #print, #school, #volunteer, #contact {
+#work, #pub, #research, #teach, #contact {
     margin-top: -10vh;
 }
 #summary {
     padding-top: 2.5vh;
-    font-weight: 350;
     font-size: 2.35vh;
 }
 #goto1, #goto2 {
@@ -225,7 +224,7 @@ h1 {
     #samHead {
         width: 45vw;
     }
-    #home, #work, #print, #school, #volunteer, #contact {
+    #profile, #research, #teach, #contact {
         padding-left: 2.5vw;
         padding-right: 2.5vw;
     }
