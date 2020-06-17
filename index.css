@@ -4,28 +4,36 @@
 body {
     font-family: "Gill Sans";
 }
-.container-fluid, .row, .col, .col-xs-1, .col-sm-1, .col-md-2, .col-lg-3, .col-xs-10, .col-sm-10, .col-md-8, .col-lg-6 {
+.navbar, .container-fluid, .row, .col, .col-5, .col-7, .col-xs-1, .col-sm-1, .col-md-2, .col-lg-3, .col-xs-10, .col-sm-10, .col-md-8, .col-lg-6, .col-xl-5, .col-xl-7 {
     margin: 0; padding: 0;
 }
 /* nav */
 .navbar {
-    color: white;
-    background: orangered;
+    background: white;
+    /*background: orangered;*/
     position: fixed;
     z-index: 1;
-    letter-spacing: .3vw
+    letter-spacing: .3vw;
+}
+#osu, #vitaLite {
+    float: right;
+    letter-spacing: .18vw;
 }
 .navbar a {
-    color: white;
+    color: black;
     font-weight: 100;
 }
+.nav {
+    border-bottom: grey solid 1px;
+}
 #sam {
-    color: black;
-    text-align: right;
+    color: rgb(38, 33, 70);
+    text-align: left;
 }
 #samHead {
-    padding-left: 1vw;
-    padding-top: 2.5vh;
+    margin-top: 3vh;
+    width: 210px;
+        border: lightslategrey solid .1px;
 }
 #ul {
     display: flex;
@@ -37,7 +45,7 @@ body {
 }
 #summary {
     padding-top: 2.5vh;
-    font-size: 2.2vh;
+    font-size: 1.9vh;
     letter-spacing: .05em;
 }
 #goto1, #goto2 {
@@ -47,7 +55,6 @@ body {
     letter-spacing: .109em;
     line-height: 1.1em;
     margin-bottom: 1.25vh;
-    border: solid rgb(223, 222, 222) .02px;
 }
 #scholar {
     letter-spacing: .2em;
@@ -56,10 +63,11 @@ body {
 }
 h1 {
     color: rgb(70, 70, 70);
-    font-weight: 500;
+    font-weight: 300;
     letter-spacing: .2em;
 }
 #subheading {
+    font-weight: 300;
     font-size: 2.5vh;
     letter-spacing: .2em;
     line-height: 5vh;
@@ -83,21 +91,21 @@ h1 {
     .navbar {
         margin: 0 25vw;
     }
+    .top {
+        padding: 2vh 0 0 0;
+    }
     #ul {
         padding: 5vh 0 1vh 0;
-        width: 48vw;
+        width: 49.45vw;
     }
     #nav {
         font-size: 1.3em;
     }
-    #osu {
-        font-size: 1.6vw;
+    #osu, #vitaLite {
+        font-size: 1.2vw;
     }
     #sam {
         font-size: 2vw;
-    }
-    #samHead {
-        width: 22.5vw;
     }
     #goto1 {
         margin-top: 15vh;
@@ -116,21 +124,21 @@ h1 {
     .navbar {
         margin: 0 25vw;
     }
+    .top {
+        padding: 2vh 0 0 0;
+    }
     #ul {
         padding: 5vh 0 1vh 0;
-        width: 47vw;
+        width: 49.25vw;
     }
     #nav {
         font-size: 1.1em;
     }
-    #osu {
+    #osu, #vitaLite {
         font-size: 1.6vw;
     }
     #sam {
         font-size: 2vw;
-    }
-    #samHead {
-        width: 22.5vw;
     }
     #goto1 {
         margin-top: 12.5vh;
@@ -149,22 +157,22 @@ h1 {
     .navbar {
         margin: 0 8.25vw;
     }
+    .top {
+        padding: 2vh 0 0 0;
+    }
     #ul {
         padding: 5vh 0 1vh 0;
-        width: 78vw;
+        width: 82.5vw;
     }
     #nav {
         font-size: 1.1em;
     }
-    #osu {
+    #osu, #vitaLite {
         font-size: 2.75vw;
     }
     #sam {
         width: 20vw;
         font-size: 3vw;
-    }
-    #samHead {
-        width: 35vw;
     }
     #goto1 {
         margin-top: 15vh;
@@ -183,21 +191,21 @@ h1 {
     .navbar {
         margin: 0 8.5vw;
     }
+    .top {
+        padding: 2vh 0 0 0;
+    }
     #ul {
         padding: 5vh 0 1vh 0;
-        width: 75vw;
+        width: 81.25vw;
     }
     #nav {
         font-size: 1em;
     }
-    #osu {
+    #osu, #vitaLite {
         font-size: 3vw;
     }
     #sam {
         width: 30vw;
-    }
-    #samHead {
-        width: 35vw;
     }
     #goto1 {
         margin-top: 15vh;
@@ -213,23 +221,25 @@ h1 {
 /* XS XS XS XS XS XS XS XS XS */
 /* XS XS XS XS XS XS XS XS XS */
 @media (max-width: 575px) {
-
+    .top {
+        padding: 2vh 2vw 0 2vw;
+    }
+    .nav {
+        margin: 0 2vw;
+    }
     #ul {
         padding: 5vh 0 0.25vh 0;
-        width: 92vw;
+        width: 95vw;
     }
     #nav {
-        font-size: .9em;
+        font-size: .75em;
     }
-    #osu {
+    #osu, #vitaLite {
         font-size: 3.5vw;
     }
     #sam {
         font-size: 4.5vw;
         width: 20vw;
-    }
-    #samHead {
-        width: 45vw;
     }
     #profile, #pub, #research, #teach, #contact {
         padding-left: 2.5vw;
