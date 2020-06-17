@@ -222,11 +222,9 @@ h1 {
     #sam {
         width: 30vw;
     }
-    #goto1 {
-        margin-top: 5vh;
-    }
+    #goto1,
     #goto2 {
-        margin-top: 3vh;
+        margin-top: 25vh;
     }
 }
 /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
@@ -260,11 +258,9 @@ h1 {
         padding-left: 2.5vw;
         padding-right: 2.5vw;
     }
-    #goto1 {
-        margin-top: 3vh;
-    }
+    #goto1,
     #goto2 {
-        margin-top: 2vh;
+        margin-top: 15vh;
     }
 }
 /* XS XS XS XS XS XS XS XS XS */
