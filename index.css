@@ -10,7 +10,6 @@ body {
 .scrolling-wrapper, .card, .container-fluid {
     height: 100vh;
 }
-
 .scrolling-wrapper {
     overflow-x: scroll;
     overflow-y: hidden;
@@ -66,7 +65,7 @@ body {
 }
 #summary {
     padding-top: 2.5vh;
-    font-size: 1.9vh;
+    font-size: 2.25vh;
     letter-spacing: .05em;
 }
 #goto1, #goto2 {
