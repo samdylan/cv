@@ -4,9 +4,31 @@
 body {
     font-family: "Gill Sans";
 }
-.navbar, .container-fluid, .row, .col, .col-5, .col-7, .col-xs-1, .col-sm-1, .col-md-2, .col-lg-3, .col-xs-10, .col-sm-10, .col-md-8, .col-lg-6, .col-xl-5, .col-xl-7 {
+.navbar, .container-fluid, .row, .col, [class*='col-'] {
     margin: 0; padding: 0;
 }
+.scrolling-wrapper, .card, .container-fluid {
+    height: 100vh;
+}
+
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-margin: 0;
+    scroll-padding: 0;
+    width: 100vw;
+    scroll-snap-type: x mandatory;
+}
+.card {
+      display: inline-block;
+      overflow-y: hidden;
+    width: 100vw;
+}
+.container-fluid {
+    width: 100vw;
+    scroll-snap-align: end;
+}
+
 /* nav */
 .navbar {
     background: white;
@@ -41,7 +63,6 @@ body {
 }
 /* nav */
 #pub, #research, #teach, #contact {
-    margin-top: -10vh;
 }
 #summary {
     padding-top: 2.5vh;
@@ -107,11 +128,9 @@ h1 {
     #sam {
         font-size: 2vw;
     }
-    #goto1 {
-        margin-top: 15vh;
-    }
+    #goto1,
     #goto2 {
-        margin-top: 15vh;
+        margin-top: 25vh;
     }
 }
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
@@ -140,11 +159,9 @@ h1 {
     #sam {
         font-size: 2vw;
     }
-    #goto1 {
-        margin-top: 12.5vh;
-    }
+    #goto1,
     #goto2 {
-        margin-top: 12.5vh;
+        margin-top: 25vh;
     }
 }
 /* LARGE LARGE LARGE LARGE LARGE LARGE */
@@ -174,11 +191,9 @@ h1 {
         width: 20vw;
         font-size: 3vw;
     }
-    #goto1 {
-        margin-top: 15vh;
-    }
+    #goto1,
     #goto2 {
-        margin-top: 15vh;
+        margin-top: 25vh;
     }
 }
 /* MED MED MED MED MED MED MED MED MED */
@@ -208,10 +223,10 @@ h1 {
         width: 30vw;
     }
     #goto1 {
-        margin-top: 15vh;
+        margin-top: 5vh;
     }
     #goto2 {
-        margin-top: 13vh;
+        margin-top: 3vh;
     }
 }
 /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
@@ -246,10 +261,10 @@ h1 {
         padding-right: 2.5vw;
     }
     #goto1 {
-        margin-top: 13vh;
+        margin-top: 3vh;
     }
     #goto2 {
-        margin-top: 12vh;
+        margin-top: 2vh;
     }
 }
 /* XS XS XS XS XS XS XS XS XS */
