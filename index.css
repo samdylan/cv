@@ -68,6 +68,10 @@ body {
     background-image: url("irrigate.jpg");
     background-size: cover;
 }
+.samHead {
+    background-image: url("oasis.jpg");
+    background-size: cover;   
+}
 #ul {
     display: flex;
     justify-content: space-between;
@@ -141,7 +145,8 @@ h1 {
         /*background-image: url("agCircles.jpg");*/
         /*background-image: url("irrigate.jpg");*/
         background-image: url("oasis.jpg");
-        background-size: cover;    }
+        background-size: cover;   
+     }
     .samHead {
         background-image: none;
         margin: 3vh 0 0 0;
@@ -151,9 +156,6 @@ h1 {
     }
     #goto2 {
         margin-top: 18vh;
-    }
-    #summary {
-
     }
 }
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
@@ -191,9 +193,6 @@ h1 {
     #goto1,
     #goto2 {
         margin-top: 15vh;
-    }
-    #summary {
-
     }
 }
 /* LARGE LARGE LARGE LARGE LARGE LARGE */
