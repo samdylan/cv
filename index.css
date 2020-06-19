@@ -2,13 +2,22 @@
     border: solid black .005px;
 }*/
 body {
-    font-family: "Gill Sans";
+    /* font-family: "Gill Sans"; */
+    /* font-family: "Helvetica Neue"; */
+    /* font-family: "Calibri"; */
+    font-family: "Avenir Next";
 }
 .navbar, .container-fluid, .row, .col, [class*='col-'] {
     margin: 0; padding: 0;
 }
 .scrolling-wrapper, .card, .container-fluid {
     height: 100vh;
+}
+.scrolling-wrapper, .card, .container-fluid {
+    /*background-color: rgb(206, 220, 226);*/
+    /*background: url("blueConcrete.jpg");*/
+    background: url("grungeWall.png");
+    background-size: cover;
 }
 .scrolling-wrapper {
     overflow-x: scroll;
@@ -30,7 +39,6 @@ body {
 
 /* nav */
 .navbar {
-    background: white;
     /*background: orangered;*/
     position: fixed;
     z-index: 1;
@@ -58,7 +66,8 @@ body {
         border: lightslategrey solid .1px;
 }
 .samHead {
-    background-image: url("agCircles.jpg");
+    /*background-image: url("agCircles.jpg");*/
+    background-image: url("irrigate.jpg");
     background-size: cover;
 }
 #ul {
@@ -130,12 +139,12 @@ h1 {
     #xlImg {
         margin-top: 20vh;
         height: 25vh;
-        background-image: url("agCircles.jpg");
+        /*background-image: url("agCircles.jpg");*/
+        /*background-image: url("irrigate.jpg");*/
+        background-image: url("oasis.jpg");
         background-size: cover;    }
     .samHead {
         background-image: none;
-    }
-    #samHead {
         margin: 3vh 0 0 0;
     }
     #goto1 {
@@ -165,8 +174,11 @@ h1 {
     #nav {
         font-size: 1.1em;
     }
+    #sam {
+        font-size: 2vw;
+    }
     #osu, #vitaLite {
-        font-size: 1.6vw;
+        font-size: 1.3vw;
     }
     .xlHead {
         display: none;
@@ -199,11 +211,11 @@ h1 {
     #nav {
         font-size: 1.1em;
     }
-    #osu, #vitaLite {
-        font-size: 2.75vw;
-    }
     #sam {
         width: 20vw;
+    }
+        #osu, #vitaLite {
+        font-size: 2vw;
     }
     .xlHead {
         display: none;
@@ -237,10 +249,11 @@ h1 {
         font-size: 1em;
     }
     #osu, #vitaLite {
-        font-size: 3vw;
+        font-size: 2.25vw;
     }
     #sam {
-        width: 30vw;
+        font-size: 3.5vw;
+        width: 25vw;
     }
     .xlHead {
         display: none;
@@ -274,10 +287,10 @@ h1 {
         font-size: .75em;
     }
     #osu, #vitaLite {
-        font-size: 3.5vw;
+        font-size: 2.75vw;
     }
     #sam {
-        width: 20vw;
+        font-size: 4.25vw;
     }
     .xlHead {
         display: none;
