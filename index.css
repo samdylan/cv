@@ -64,11 +64,10 @@ body {
 }
 #samHead {
     width: 210px;
-    /*background-image: url("agCircles.jpg");*/
-    background-image: url("irrigate.jpg");
-    background-size: cover;
 }
 .samHead {
+    /*background-image: url("agCircles.jpg");*/
+    /*background-image: url("irrigate.jpg");*/
     background-image: url("oasis.jpg");
     background-size: cover;   
 }
@@ -225,7 +224,7 @@ h1 {
         display: none;
     }
     #samHead {
-        margin: 1.5vh;
+        margin: 0vh;
     }
     #goto1,
     #goto2 {
@@ -263,7 +262,7 @@ h1 {
         display: none;
     }
     #samHead {
-        margin: 1vh;
+        margin: 0vh;
     }
     #goto1,
     #goto2 {
