@@ -61,9 +61,7 @@ body {
     font-size: 25px;
 }
 #samHead {
-    margin: 3vh;
     width: 210px;
-        border: lightslategrey solid .1px;
 }
 .samHead {
     /*background-image: url("agCircles.jpg");*/
@@ -184,7 +182,7 @@ h1 {
         display: none;
     }
     #samHead {
-        margin: 2vh;
+        margin: 0vh;
     }
     #goto1,
     #goto2 {
