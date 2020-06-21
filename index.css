@@ -63,12 +63,12 @@ body {
     font-size: 25px;
 }
 #samHead {
-    width: 210px;
+    width: 45vw;
 }
 .samHead {
-    /*background-image: url("agCircles.jpg");*/
+    background-image: url("agCircles.jpg");
     /*background-image: url("irrigate.jpg");*/
-    background-image: url("oasis.jpg");
+    /*background-image: url("oasis.jpg");*/
     background-size: cover;   
 }
 #ul {
@@ -141,9 +141,9 @@ h1 {
     #xlImg {
         margin-top: 20vh;
         height: 25vh;
-        /*background-image: url("agCircles.jpg");*/
+        background-image: url("agCircles.jpg");
         /*background-image: url("irrigate.jpg");*/
-        background-image: url("oasis.jpg");
+        /*background-image: url("oasis.jpg");*/
         background-size: cover;   
      }
     .samHead {
@@ -288,6 +288,9 @@ h1 {
     }
     #nav {
         font-size: .75em;
+    }
+    h1 {
+        font-size: 7.5vw;
     }
     #osu, #vitaLite {
         font-size: 2.75vw;
