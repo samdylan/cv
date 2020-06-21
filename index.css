@@ -62,14 +62,11 @@ body {
     text-align: left;
     font-size: 25px;
 }
-#samHead {
-    width: 45vw;
-}
 .samHead {
     background-image: url("agCircles.jpg");
     /*background-image: url("irrigate.jpg");*/
     /*background-image: url("oasis.jpg");*/
-    background-size: cover;   
+    background-size: cover;
 }
 #ul {
     display: flex;
@@ -150,6 +147,9 @@ h1 {
         background-image: none;
         margin: 3vh 0 0 0;
     }
+    #samHead {
+        width: 12.5vw;
+    }
     #goto1 {
         margin-top: 1vh;
     }
@@ -187,6 +187,7 @@ h1 {
         display: none;
     }
     #samHead {
+        width: 15vw;
         margin: 0vh;
     }
     #goto1,
@@ -224,6 +225,7 @@ h1 {
         display: none;
     }
     #samHead {
+        width: 20vw;
         margin: 0vh;
     }
     #goto1,
@@ -256,12 +258,13 @@ h1 {
     }
     #sam {
         font-size: 3.5vw;
-        width: 25vw;
+        width: 15vw;
     }
     .xlHead {
         display: none;
     }
     #samHead {
+        width: 20vw;
         margin: 0vh;
     }
     #goto1,
@@ -302,7 +305,8 @@ h1 {
         display: none;
     }
     #samHead {
-        margin: 1vh;
+        margin: 0vh;
+        width: 30vw;
     }
     #profile, #pub, #research, #teach, #contact {
         padding-left: 2.5vw;
