@@ -41,7 +41,8 @@ body {
 
 /* nav */
 .navbar {
-    /*background: orangered;*/
+    background: url("filterLong.png");
+    background-size: cover;
     position: fixed;
     z-index: 1;
     letter-spacing: .2vw;
@@ -111,6 +112,10 @@ h1 {
 }
 #bottom {
     padding-bottom: 25vh;
+}
+
+#pub {
+
 }
 
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
