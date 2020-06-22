@@ -15,8 +15,8 @@ body {
 }
 .scrolling-wrapper, .card, .container-fluid {
     /*background-color: rgb(206, 220, 226);*/
-    /*background: url("blueConcrete.jpg");*/
-    background: url("grungeWall.png");
+    /*background: url("grungeWall.png");*/
+    background: url("filterLong.png");
     background-size: cover;
 }
 .scrolling-wrapper {
@@ -44,7 +44,7 @@ body {
     /*background: orangered;*/
     position: fixed;
     z-index: 1;
-    letter-spacing: .3vw;
+    letter-spacing: .2vw;
 }
 #osu, #vitaLite {
     float: right;
@@ -52,7 +52,7 @@ body {
 }
 .navbar a {
     color: black;
-    font-weight: 100;
+    font-weight: 250;
 }
 .nav {
     border-bottom: grey solid 1px;
@@ -60,7 +60,7 @@ body {
 #sam {
     color: rgb(38, 33, 70);
     text-align: left;
-    font-size: 25px;
+    font-size: 3vw;
 }
 .samHead {
     background-image: url("agCircles.jpg");
@@ -76,8 +76,6 @@ body {
 
 #summary {
     padding-top: 2.5vh;
-    font-size: 2.25vh;
-    letter-spacing: .05em;
 }
 #goto1, #goto2 {
     display: block; 
@@ -99,7 +97,7 @@ h1 {
 }
 #subheading {
     font-weight: 300;
-    font-size: 2.5vh;
+    font-size: 3.5vw;
     letter-spacing: .2em;
     line-height: 5vh;
     padding-bottom: .8vh;
@@ -130,18 +128,21 @@ h1 {
         width: 49.45vw;
     }
     #nav {
-        font-size: 1.3em;
+        font-size: 1.5vw;
+    }
+    #osu {
+        padding-top: .75vh;
     }
     #osu, #vitaLite {
         font-size: 1.2vw;
     }
     #xlImg {
-        margin-top: 20vh;
+        margin-top: 30vh;
         height: 25vh;
         background-image: url("agCircles.jpg");
         /*background-image: url("irrigate.jpg");*/
         /*background-image: url("oasis.jpg");*/
-        background-size: cover;   
+        background-size: cover;
      }
     .samHead {
         background-image: none;
@@ -155,6 +156,10 @@ h1 {
     }
     #goto2 {
         margin-top: 18vh;
+    }
+    #summary {
+        font-size: 2.25vh;
+        letter-spacing: .05em;
     }
 }
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
@@ -175,10 +180,13 @@ h1 {
         width: 49.25vw;
     }
     #nav {
-        font-size: 1.1em;
+        font-size: 1.5vw;
     }
     #sam {
         font-size: 2vw;
+    }
+    #osu {
+        padding-top: .5vh;
     }
     #osu, #vitaLite {
         font-size: 1.3vw;
@@ -194,6 +202,11 @@ h1 {
     #goto2 {
         margin-top: 15vh;
     }
+    #summary {
+        padding-top: 5vh;
+        font-size: 1.5vw;
+        letter-spacing: .05em;
+    }
 }
 /* LARGE LARGE LARGE LARGE LARGE LARGE */
 /* LARGE LARGE LARGE LARGE LARGE LARGE */
@@ -208,18 +221,21 @@ h1 {
     .top {
         padding: 2vh 0 0 0;
     }
+    #sam {
+        font-size: 3.5vw;
+    }
     #ul {
         padding: 5vh 0 1vh 0;
         width: 82.5vw;
     }
     #nav {
-        font-size: 1.1em;
+        font-size: 1.9vw;
     }
-    #sam {
-        width: 20vw;
+    #osu {
+        padding-top: .65vh;
     }
-        #osu, #vitaLite {
-        font-size: 2vw;
+    #osu, #vitaLite {
+        font-size: 1.75vw;
     }
     .xlHead {
         display: none;
@@ -231,6 +247,11 @@ h1 {
     #goto1,
     #goto2 {
         margin-top: 17.5vh;
+    }
+    #summary {
+        padding-top: 5vh;
+        font-size: 2.25vh;
+        letter-spacing: .05em;
     }
 }
 /* MED MED MED MED MED MED MED MED MED */
@@ -251,14 +272,13 @@ h1 {
         width: 81.25vw;
     }
     #nav {
-        font-size: 1em;
+        font-size: 2.2vh;
     }
     #osu, #vitaLite {
         font-size: 2.25vw;
     }
     #sam {
-        font-size: 3.5vw;
-        width: 15vw;
+        font-size: 3.75vw;
     }
     .xlHead {
         display: none;
@@ -270,6 +290,11 @@ h1 {
     #goto1,
     #goto2 {
         margin-top: 15vh;
+    }
+    #summary {
+        padding-top: 5vh;
+        font-size: 2.25vh;
+        letter-spacing: .05em;
     }
 }
 /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
@@ -290,16 +315,16 @@ h1 {
         width: 95vw;
     }
     #nav {
-        font-size: .75em;
+        font-size: 3.25vw;
     }
     h1 {
         font-size: 7.5vw;
     }
     #osu, #vitaLite {
-        font-size: 2.75vw;
+        font-size: 3.2vw;
     }
     #sam {
-        font-size: 4.25vw;
+        font-size: 4.5vw;
     }
     .xlHead {
         display: none;
@@ -315,6 +340,11 @@ h1 {
     #goto1,
     #goto2 {
         margin-top: 15vh;
+    }
+    #summary {
+        padding-top: 5vh;
+        font-size: 3vw;
+        letter-spacing: .05em;
     }
 }
 /* XS XS XS XS XS XS XS XS XS */
