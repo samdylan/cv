@@ -27,6 +27,7 @@ body {
     scroll-padding: 0;
     width: 100vw;
     scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
 }
 .card {
       display: inline-block;
