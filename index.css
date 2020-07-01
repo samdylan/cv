@@ -62,7 +62,6 @@ body {
 #sam {
     color: rgb(38, 33, 70);
     text-align: left;
-    font-size: 2.75vw;
 }
 .samHead {
     background-image: url("agCircles.jpg");
@@ -84,7 +83,8 @@ body {
 }
 #line {
     letter-spacing: .109em;
-    line-height: 1.1em;
+    line-height: 1.2em;
+    font-size: 2vh;
     margin-bottom: 1.25vh;
 }
 #scholar {
@@ -115,17 +115,13 @@ h1 {
     padding-bottom: 25vh;
 }
 
-#pub {
-
-}
-
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
 @media (min-width: 1200px) {
     .navbar {
         margin: 0 25vw;
     }
-    .top {
+    #top {
         padding: 2vh 0 0 0;
     }
     #ul {
@@ -133,13 +129,13 @@ h1 {
         width: 49.45vw;
     }
     #nav {
-        font-size: 1.5vw;
+        font-size: 1.25vw;
     }
     #osu {
-        padding-top: .75vh;
+        padding-top: .5vh;
     }
     #osu, #vitaLite {
-        font-size: 1.2vw;
+        font-size: 1.1vw;
     }
     #xlImg {
         margin-top: 22.5vh;
@@ -148,6 +144,9 @@ h1 {
         /*background-image: url("irrigate.jpg");*/
         /*background-image: url("oasis.jpg");*/
         background-size: cover;
+     }
+     #sam {
+         font-size: 1.95vw;
      }
     .samHead {
         background-image: none;
@@ -162,12 +161,18 @@ h1 {
     #goto2 {
         margin-top: 27.5vh;
     }
+    h1 {
+        font-size: 2.25vw;
+    }
     #subheading {
         font-size: 1.5vw;
     }
     #summary {
         font-size: 2vh;
         letter-spacing: .05em;
+    }
+    #line {
+        font-size: 2vh;
     }
 }
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
@@ -180,7 +185,7 @@ h1 {
     .navbar {
         margin: 0 25vw;
     }
-    .top {
+    #top {
         padding: 2vh 0 0 0;
     }
     #ul {
@@ -208,12 +213,18 @@ h1 {
     }
     #goto1,
     #goto2 {
-        margin-top: 15vh;
+        margin-top: 17.5vh;
+    }
+    h1 {
+        font-size: 2.5vw;
     }
     #summary {
         padding-top: 5vh;
-        font-size: 1.5vw;
+        font-size: 1.25vw;
         letter-spacing: .05em;
+    }
+    #line {
+        font-size: 1.25vw;
     }
 }
 /* LARGE LARGE LARGE LARGE LARGE LARGE */
@@ -226,7 +237,7 @@ h1 {
     .navbar {
         margin: 0 8.25vw;
     }
-    .top {
+    #top {
         padding: 2vh 0 0 0;
     }
     #sam {
@@ -256,10 +267,17 @@ h1 {
     #goto2 {
         margin-top: 17.5vh;
     }
+    h1 {
+        padding-top: 5vh;
+        font-size: 2.75vw;
+    }
     #summary {
         padding-top: 5vh;
         font-size: 2vh;
         letter-spacing: .05em;
+    }
+    #line {
+        font-size: 1.5vw;
     }
 }
 /* MED MED MED MED MED MED MED MED MED */
@@ -272,7 +290,7 @@ h1 {
     .navbar {
         margin: 0 8.5vw;
     }
-    .top {
+    #top {
         padding: 2vh 0 0 0;
     }
     #ul {
@@ -299,10 +317,17 @@ h1 {
     #goto2 {
         margin-top: 15vh;
     }
+    h1 {
+        padding-top: 5vh;
+        font-size: 3.5vw;
+    }
     #summary {
         padding-top: 5vh;
-        font-size: 2vh;
+        font-size: 2.25vh;
         letter-spacing: .05em;
+    }
+    #line {
+        font-size: 2.25vw;
     }
 }
 /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
@@ -312,7 +337,7 @@ h1 {
 /* XS XS XS XS XS XS XS XS XS */
 /* XS XS XS XS XS XS XS XS XS */
 @media (max-width: 575px) {
-    .top {
+    #top {
         padding: 2vh 2vw 0 2vw;
     }
     .nav {
@@ -349,10 +374,17 @@ h1 {
     #goto2 {
         margin-top: 15vh;
     }
+    h1 {
+        padding-top: 5vh;
+        font-size: 4.75vw;
+    }
     #summary {
         padding-top: 5vh;
-        font-size: 2.95vw;
+        font-size: 2.25vh;
         letter-spacing: .05em;
+    }
+    #line {
+        font-size: 2.75vw;
     }
 }
 /* XS XS XS XS XS XS XS XS XS */
