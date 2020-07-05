@@ -74,6 +74,27 @@ body {
     justify-content: space-between;
 }
 /* nav */
+#fwd0 {
+    position: absolute;
+    top: 50vh;
+    right: 21vw;
+}
+
+#fwd {
+    position: absolute;
+    top: 50vh;
+    left: 2vw;
+}
+#prev {
+    position: absolute;
+    top: 50vh;
+    right: 2vw;
+}
+img.next, img.prev {
+    height: 4vh;
+    opacity: .45;
+}
+
 
 #summary {
     padding-top: 2.5vh;
