@@ -1,62 +1,46 @@
 /* {
     border: solid black .005px;
-}*/
+} */
+
 body {
-    /* font-family: "Gill Sans"; */
-    /* font-family: "Helvetica Neue"; */
-    /* font-family: "Calibri"; */
     font-family: "Avenir Next";
 }
-.navbar, .container-fluid, .row, .col, [class*='col-'] {
-    margin: 0; padding: 0;
+nav, .div, .container-fluid, .row,
+.col, .col-1 .col-xs-1 .col-sm-1 .col-lg-3, .col-10 .col-xs-10 .col-sm-10 .col-lg-6, .col-5, .col-7, .col-12 {
+    margin: 0;
+    padding: 0;
+    border: none;
 }
-.scrolling-wrapper, .card, .container-fluid  {
-    height: 100vh;
-}
-.scrolling-wrapper, .card, .container-fluid {
-    background: url("filterLong.png");
-    background-size: cover;
-}
-.scrolling-wrapper {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    scroll-margin: 0;
-    scroll-padding: 0;
-    width: 100vw;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-}
-.card {
-      display: inline-block;
-      overflow-y: hidden;
-    width: 100vw;
-    white-space: normal;
-}
-.container-fluid {
-    width: 100vw;
-    scroll-snap-align: end;
-}
-
-/* nav */
-.navbar {
-    /* background-image: url("aerial2.jpg"); */
+nav {
+    position: absolute;
+    top: 0;
+    z-index: 1;
     background-image: url("irrigate.jpg");
     background-size: cover;
-    position: fixed;
-    z-index: 1;
     letter-spacing: .2vw;
-    padding-left: .5vw;
-    padding-right: .5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
-.navbar a {
-    font-weight: 250;
+
+.scrolling-wrapper-flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+
+    height: 100vh;
+    overflow-y: hidden;
+   /* white-space: nowrap; */
+
+    scroll-margin: 0;
+    scroll-padding: 0;
+    scroll-snap-type: both mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: auto;
 }
-.navbar a, #sam, #osu, #vitaLite {
+
+#sam, #osu, #vitaLite, #nav {
     color: white;
     filter: drop-shadow(.1px .1px 9px black);
 }
-
 #sam {
     text-align: left;
 }
@@ -64,20 +48,41 @@ body {
     float: right;
     letter-spacing: .18vw;
 }
-
-.samHead {
-    background-image: url("agCircles.jpg");
-    /*background-image: url("irrigate.jpg");*/
-    /*background-image: url("oasis.jpg");*/
-    background-size: cover;
-}
-#ul {
+.nav {
     display: flex;
     justify-content: space-between;
 }
+
 /* nav */
 
+.card {
+    padding-top: 30vh;
+    height: auto;
+    flex: 0 0 auto;
+    -webkit-overflow-scrolling: auto;
+    scroll-snap-align: start;
+}
 
+#profile,#consulting,#mgmt,#contact {
+    width: 100vw;
+    background: url("filterLong.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: scroll;
+}
+
+#academic {
+    height: auto;
+    width: 100vw;
+
+    overflow-y: scroll;
+    overflow-x:hidden;
+    display: inline-block;
+}
+
+
+
+/*
 #fwd {
     position: absolute;
     top: 50vh;
@@ -90,36 +95,35 @@ img.next, img.prev {
     height: 3vh;
     opacity: .8;
 }
+*/
 
 
-#summary {
-    padding-top: 2.5vh;
-}
-#goto1, #goto2 {
-    display: block; 
-}
 #line {
     letter-spacing: .109em;
     line-height: 1.2em;
     font-size: 2vh;
     margin-bottom: 1.25vh;
 }
+
 #scholar {
     letter-spacing: .2em;
     line-height: 1.1em;
     margin-bottom: 1.25vh;
 }
+
 h1 {
     color: rgb(70, 70, 70);
     font-weight: 250;
     letter-spacing: .2em;
 }
+
 #subheading {
     font-weight: 300;
     letter-spacing: .2em;
     line-height: 5vh;
     padding-bottom: .8vh;
 }
+
 #place {
     color: grey;
     font-size: .85em;
@@ -128,9 +132,7 @@ h1 {
     padding-bottom: 1vh;
     padding-top: 0;
 }
-#bottom {
-    padding-bottom: 25vh;
-}
+
 
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
@@ -141,43 +143,39 @@ h1 {
     #prev {
         left: 20vw;
     }
-    
-    .navbar {
+
+    nav {
         margin: 0 25vw;
     }
-    #top {
+    #topRow {
         padding: 2vh 0 0 0;
     }
-    #ul {
-        padding: 5vh 0 1vh 0;
-        width: 49.45vw;
+    #sam {
+        font-size: 1.95vw;
+        padding: 0;
+    }
+    #osu {
+        padding: .5vh 0 0 0;
+    }
+    #osu,
+    #vitaLite {
+        font-size: 1.1vw;
+    }
+
+    .nav {
+        padding: 12.5vh 0 1vh 0;
     }
     #nav {
         font-size: 1.25vw;
     }
-    #osu {
-        padding-top: .5vh;
-    }
-    #osu, #vitaLite {
-        font-size: 1.1vw;
-    }
 
-     #sam {
-         font-size: 1.95vw;
-     }
     .samHead {
-        background-image: none;
         margin: 3vh 0 0 0;
     }
     #samHead {
         width: 12.5vw;
     }
-    #goto1 {
-        margin-top: 1vh;
-    }
-    #goto2 {
-        margin-top: 27.5vh;
-    }
+
     h1 {
         font-size: 2.25vw;
     }
@@ -192,6 +190,7 @@ h1 {
         font-size: 2vh;
     }
 }
+
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
 
@@ -202,54 +201,58 @@ h1 {
     #fwd {
         right: 20vw;
     }
+
     #prev {
         left: 20vw;
     }
-    .navbar {
+    nav {
         margin: 0 25vw;
     }
-    #top {
+    #topRow {
         padding: 2vh 0 0 0;
     }
-    #ul {
-        padding: 5vh 0 1vh 0;
-        width: 49.25vw;
+
+    .nav {
+        padding: 12.5vh 0 1vh 0;
     }
+
     #nav {
         font-size: 1.5vw;
     }
+
     #sam {
         font-size: 2vw;
     }
+
     #osu {
         padding-top: .5vh;
     }
-    #osu, #vitaLite {
+
+    #osu,
+    #vitaLite {
         font-size: 1.3vw;
     }
-    .xlHead {
-        display: none;
-    }
+
     #samHead {
         width: 15vw;
         margin: 0vh;
     }
-    #goto1,
-    #goto2 {
-        margin-top: 17.5vh;
-    }
+
     h1 {
         font-size: 2.5vw;
     }
+
     #summary {
         padding-top: 5vh;
         font-size: 1.25vw;
         letter-spacing: .05em;
     }
+
     #line {
         font-size: 1.25vw;
     }
 }
+
 /* LARGE LARGE LARGE LARGE LARGE LARGE */
 /* LARGE LARGE LARGE LARGE LARGE LARGE */
 
@@ -260,55 +263,60 @@ h1 {
     #fwd {
         right: 3vw;
     }
+
     #prev {
         left: 3vw;
     }
-    .navbar {
-        margin: 0 8.25vw;
+
+    nav {
+        margin: 0 10vw;
     }
-    #top {
+    #topRow {
         padding: 2vh 0 0 0;
     }
+
     #sam {
         font-size: 3.5vw;
     }
-    #ul {
+
+    .nav {
         padding: 5vh 0 1vh 0;
-        width: 82.5vw;
     }
+
     #nav {
         font-size: 1.9vw;
     }
+
     #osu {
         padding-top: .65vh;
     }
-    #osu, #vitaLite {
+
+    #osu,
+    #vitaLite {
         font-size: 1.75vw;
     }
-    .xlHead {
-        display: none;
-    }
+
     #samHead {
         width: 20vw;
         margin: 0vh;
     }
-    #goto1,
-    #goto2 {
-        margin-top: 17.5vh;
-    }
+
     h1 {
         padding-top: 5vh;
         font-size: 2.75vw;
     }
+
     #summary {
         padding-top: 5vh;
         font-size: 2vh;
         letter-spacing: .05em;
     }
+
     #line {
         font-size: 1.5vw;
     }
 }
+
 /* MED MED MED MED MED MED MED MED MED */
 /* MED MED MED MED MED MED MED MED MED */
 
@@ -319,52 +327,55 @@ h1 {
     #fwd {
         right: 3vw;
     }
+
     #prev {
         left: 3vw;
     }
-    .navbar {
-        margin: 0 8.5vw;
+    nav {
+        margin: 0 10vw;
     }
-    #top {
+    #topRow {
         padding: 2vh 0 0 0;
     }
-    #ul {
+
+    .nav {
         padding: 5vh 0 1vh 0;
-        width: 81.25vw;
     }
+
     #nav {
         font-size: 2.2vh;
     }
-    #osu, #vitaLite {
+
+    #osu,
+    #vitaLite {
         font-size: 2.25vw;
     }
+
     #sam {
         font-size: 3.75vw;
     }
-    .xlHead {
-        display: none;
-    }
+
     #samHead {
         width: 20vw;
         margin: 0vh;
     }
-    #goto1,
-    #goto2 {
-        margin-top: 15vh;
-    }
+
     h1 {
         padding-top: 5vh;
         font-size: 3.5vw;
     }
+
     #summary {
         padding-top: 5vh;
         font-size: 2vh;
         letter-spacing: .05em;
     }
+
     #line {
         font-size: 2.25vw;
     }
 }
+
 /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
 /* SSSSSSSSSSSSSSSSSSSSSSSSSS5SSSSSSSSS */
 
@@ -373,62 +384,73 @@ h1 {
 /* XS XS XS XS XS XS XS XS XS */
 @media (max-width: 575px) {
     #fwd {
-        display:none;    
+        display: none;
     }
 
     #prev {
-        display:none;
+        display: none;
     }
-
-    #top {
-        padding: 2vh 2vw 0 2vw;
-    }
-    .nav {
+    nav {
         margin: 0 2vw;
     }
-    #ul {
-        padding: 5vh 0 0.25vh 0;
-        width: 95vw;
+    #topRow {
+        padding: 2vh 2vw 0 2vw;
     }
+
+    ul {
+        margin: 0 2vw;
+    }
+
+    .nav {
+        padding: 5vh 0 0.25vh 0;
+    }
+
     #nav {
         font-size: 3.25vw;
     }
+
     h1 {
         font-size: 7.5vw;
     }
-    #osu, #vitaLite {
+
+    #osu,
+    #vitaLite {
         font-size: 3.2vw;
     }
+
     #sam {
         font-size: 4.5vw;
     }
-    .xlHead {
-        display: none;
-    }
+
     #samHead {
         margin: 0vh;
         width: 30vw;
     }
-    #profile, #pub, #research, #teach, #contact {
+
+    #profile,
+    #academic,
+    #consulting,
+    #mgmt,
+    #contact {
         padding-left: 2.5vw;
         padding-right: 2.5vw;
     }
-    #goto1,
-    #goto2 {
-        margin-top: 15vh;
-    }
+
     h1 {
         padding-top: 5vh;
         font-size: 4.75vw;
     }
+
     #summary {
         padding-top: 5vh;
         font-size: 2.2vh;
         letter-spacing: .05em;
     }
+
     #line {
         font-size: 2.75vw;
     }
 }
+
 /* XS XS XS XS XS XS XS XS XS */
 /* XS XS XS XS XS XS XS XS XS */
