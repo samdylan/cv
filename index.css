@@ -14,8 +14,6 @@ body {
     height: 100vh;
 }
 .scrolling-wrapper, .card, .container-fluid {
-    /*background-color: rgb(206, 220, 226);*/
-    /*background: url("grungeWall.png");*/
     background: url("filterLong.png");
     background-size: cover;
 }
@@ -42,27 +40,31 @@ body {
 
 /* nav */
 .navbar {
-    background: url("filterLong.png");
+    /* background-image: url("aerial2.jpg"); */
+    background-image: url("irrigate.jpg");
     background-size: cover;
     position: fixed;
     z-index: 1;
     letter-spacing: .2vw;
+    padding-left: .5vw;
+    padding-right: .5vw;
+}
+.navbar a {
+    font-weight: 250;
+}
+.navbar a, #sam, #osu, #vitaLite {
+    color: white;
+    filter: drop-shadow(.1px .1px 9px black);
+}
+
+#sam {
+    text-align: left;
 }
 #osu, #vitaLite {
     float: right;
     letter-spacing: .18vw;
 }
-.navbar a {
-    color: black;
-    font-weight: 250;
-}
-.nav {
-    border-bottom: grey solid 1px;
-}
-#sam {
-    color: rgb(38, 33, 70);
-    text-align: left;
-}
+
 .samHead {
     background-image: url("agCircles.jpg");
     /*background-image: url("irrigate.jpg");*/
@@ -86,7 +88,7 @@ body {
 }
 img.next, img.prev {
     height: 3vh;
-    opacity: .45;
+    opacity: .8;
 }
 
 
@@ -159,14 +161,7 @@ h1 {
     #osu, #vitaLite {
         font-size: 1.1vw;
     }
-    #xlImg {
-        margin-top: 22.5vh;
-        height: 25vh;
-        background-image: url("agCircles.jpg");
-        /*background-image: url("irrigate.jpg");*/
-        /*background-image: url("oasis.jpg");*/
-        background-size: cover;
-     }
+
      #sam {
          font-size: 1.95vw;
      }
@@ -363,7 +358,7 @@ h1 {
     }
     #summary {
         padding-top: 5vh;
-        font-size: 2.25vh;
+        font-size: 2vh;
         letter-spacing: .05em;
     }
     #line {
@@ -428,7 +423,7 @@ h1 {
     }
     #summary {
         padding-top: 5vh;
-        font-size: 2.25vh;
+        font-size: 2.2vh;
         letter-spacing: .05em;
     }
     #line {
