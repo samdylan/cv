@@ -183,7 +183,7 @@ h1 {
         font-size: 1.5vw;
     }
     #summary {
-        font-size: 2vh;
+        font-size: 1.95vh;
         letter-spacing: .05em;
     }
     #line {
@@ -217,7 +217,7 @@ h1 {
     }
 
     #nav {
-        font-size: 1.5vw;
+        font-size: 1.35vw;
     }
 
     #sam {
@@ -327,32 +327,27 @@ h1 {
     #fwd {
         right: 3vw;
     }
-
     #prev {
         left: 3vw;
     }
+
     nav {
         margin: 0 10vw;
     }
     #topRow {
         padding: 2vh 0 0 0;
     }
-
+    #osu,  #vitaLite {
+        font-size: 2.25vw;
+    }
+    #sam {
+        font-size: 3.75vw;
+    }
     .nav {
         padding: 5vh 0 1vh 0;
     }
-
     #nav {
-        font-size: 2.2vh;
-    }
-
-    #osu,
-    #vitaLite {
-        font-size: 2.25vw;
-    }
-
-    #sam {
-        font-size: 3.75vw;
+        font-size: 1.75vh;
     }
 
     #samHead {
@@ -391,42 +386,34 @@ h1 {
         display: none;
     }
     nav {
-        margin: 0 2vw;
+        margin: 0;
     }
     #topRow {
         padding: 2vh 2vw 0 2vw;
+    }   
+    #osu,  #vitaLite {
+        font-size: 3vw;
+    }
+    #sam {
+        font-size: 4vw;
     }
 
     ul {
         margin: 0 2vw;
     }
-
     .nav {
-        padding: 5vh 0 0.25vh 0;
+        padding: 5vh 0 1vh 0;
     }
-
     #nav {
-        font-size: 3.25vw;
+        font-size: 2.85vw;
     }
-
-    h1 {
-        font-size: 7.5vw;
-    }
-
-    #osu,
-    #vitaLite {
-        font-size: 3.2vw;
-    }
-
-    #sam {
-        font-size: 4.5vw;
-    }
-
     #samHead {
         margin: 0vh;
         width: 30vw;
     }
-
+    h1 {
+        font-size: 7.5vw;
+    }
     #profile,
     #academic,
     #consulting,
@@ -443,7 +430,7 @@ h1 {
 
     #summary {
         padding-top: 5vh;
-        font-size: 2.2vh;
+        font-size: 1.9vh;
         letter-spacing: .05em;
     }
 
