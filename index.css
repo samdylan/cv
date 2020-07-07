@@ -61,6 +61,10 @@ nav {
     flex: 0 0 auto;
     -webkit-overflow-scrolling: auto;
     scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+#academicH1 {
+    scroll-snap-align: start;
 }
 
 #profile,#consulting,#mgmt,#contact {
@@ -104,14 +108,12 @@ img.next, img.prev {
     font-size: 2vh;
     margin-bottom: 1.25vh;
 }
-
 #scholar {
     letter-spacing: .2em;
     line-height: 1.1em;
     margin-bottom: 1.25vh;
 }
-
-h1 {
+h1, h2 {
     color: rgb(70, 70, 70);
     font-weight: 250;
     letter-spacing: .2em;
@@ -179,6 +181,7 @@ h1 {
     h1 {
         font-size: 2.25vw;
     }
+    h2 {font-size: 1.9vw;}
     #subheading {
         font-size: 1.5vw;
     }
@@ -241,6 +244,7 @@ h1 {
     h1 {
         font-size: 2.5vw;
     }
+    h2 {font-size: 1.9vw;}
 
     #summary {
         padding-top: 5vh;
@@ -305,6 +309,7 @@ h1 {
         padding-top: 5vh;
         font-size: 2.75vw;
     }
+    h2 {font-size: 2.2vw;}
 
     #summary {
         padding-top: 5vh;
@@ -359,6 +364,7 @@ h1 {
         padding-top: 5vh;
         font-size: 3.5vw;
     }
+    h2 {font-size: 2.5vw;}
 
     #summary {
         padding-top: 5vh;
@@ -411,9 +417,7 @@ h1 {
         margin: 0vh;
         width: 30vw;
     }
-    h1 {
-        font-size: 7.5vw;
-    }
+
     #profile,
     #academic,
     #consulting,
@@ -427,13 +431,13 @@ h1 {
         padding-top: 5vh;
         font-size: 4.75vw;
     }
+    h2 {font-size: 4vw;}
 
     #summary {
         padding-top: 5vh;
         font-size: 1.9vh;
         letter-spacing: .05em;
     }
-
     #line {
         font-size: 2.75vw;
     }
