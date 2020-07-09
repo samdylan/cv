@@ -1,17 +1,17 @@
-/*{
+/* {
     border: solid black .005px;
-}*/
+} */
 
 body {
     font-family: "Avenir Next";
 }
-nav, .card, .div, .container-fluid, .row,
+.card, .row, .navbar, #nav, #header,
 .col, .col-1 .col-xs-1 .col-sm-1 .col-lg-3, .col-10 .col-xs-10 .col-sm-10 .col-lg-6, .col-5, .col-7, .col-12 {
     margin: 0;
     padding: 0;
     border: none;
 }
-nav {
+#header {
     position: absolute;
     top: 0;
     z-index: 1;
@@ -20,6 +20,10 @@ nav {
     letter-spacing: .2vw;
     padding-left: 1vw;
     padding-right: 1vw;
+}
+.navbar-nav .nav-link .active, v-scroll-spy-active {
+    color: red;
+    text-decoration: underline;
 }
 
 .scrolling-wrapper-flexbox {
@@ -38,7 +42,7 @@ nav {
 }
 
 #sam, #osu, #vitaLite, #nav {
-    color: white;
+    color: white    ;
     filter: drop-shadow(.1px .1px 9px black);
 }
 #sam {
@@ -48,10 +52,18 @@ nav {
     float: right;
     letter-spacing: .18vw;
 }
-.nav {
-    display: flex;
+
+.navbar-nav {
+    padding-top: 9.5vh;
+    padding-bottom: 1vh;
+}
+.navbar-nav {
+    flex-grow: 1;
+    display: inline-flex; /* important! */
     justify-content: space-between;
 }
+
+
 
 /* nav */
 
@@ -147,7 +159,7 @@ h1, h2 {
         left: 20vw;
     }
 
-    nav {
+    #header {
         margin: 0 25vw;
     }
     #topRow {
@@ -165,9 +177,6 @@ h1, h2 {
         font-size: 1.1vw;
     }
 
-    .nav {
-        padding: 12.5vh 0 1vh 0;
-    }
     #nav {
         font-size: 1.25vw;
     }
@@ -209,16 +218,13 @@ h1, h2 {
     #prev {
         left: 20vw;
     }
-    nav {
+    #header {
         margin: 0 25vw;
     }
     #topRow {
         padding: 2vh 0 0 0;
     }
 
-    .nav {
-        padding: 12.5vh 0 1vh 0;
-    }
 
     #nav {
         font-size: 1.35vw;
@@ -272,7 +278,7 @@ h1, h2 {
         left: 3vw;
     }
 
-    nav {
+    #header {
         margin: 0 8.5vw;
     }
     #topRow {
@@ -288,9 +294,6 @@ h1, h2 {
         font-size: 1.75vw;
     }
 
-    .nav {
-        padding: 5vh 0 1vh 0;
-    }
     #nav {
         font-size: 1.9vw;
     }
@@ -331,7 +334,7 @@ h1, h2 {
         left: 3vw;
     }
 
-    nav {
+    #header {
         margin: 0 8.5vw;
     }
     #topRow {
@@ -343,9 +346,7 @@ h1, h2 {
     #sam {
         font-size: 3.75vw;
     }
-    .nav {
-        padding: 5vh 0 1vh 0;
-    }
+
     #nav {
         font-size: 1.75vh;
     }
@@ -386,7 +387,7 @@ h1, h2 {
     #prev {
         display: none;
     }
-    nav {
+    #header {
         margin: 0;
     }
     #topRow {
@@ -401,9 +402,6 @@ h1, h2 {
 
     ul {
         margin: 0 2vw;
-    }
-    .nav {
-        padding: 5vh 0 1vh 0;
     }
     #nav {
         font-size: 2.85vw;

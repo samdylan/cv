@@ -4,8 +4,27 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="//unpkg.com/vue2-scrollspy/dist/index.js"></script>
+
+
+    <!-- bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
 
     <link rel="stylesheet" type="text/css" href="index.css">
 
@@ -13,9 +32,9 @@
     <title>Samuel D. Bell</title>
 </head>
 
-<body>
+<body v-scroll-spy="{data:'section'}">
 
-    <nav>
+    <div id="header">
         <div class="row" id=topRow>
             <div class="col-5" id="sam">SAMUEL D. BELL</div>
             <div class="col-7">
@@ -23,19 +42,30 @@
                 <div class="row" id="vitaLite">Executive Chairman, Vitalite</div>
             </div>
         </div>
-        <ul class="nav" id="ul">
-            <li><a id="nav" href="#profile" role="navigation">HOME</a></li>
-            <li><a id="nav" href="#academic" role="navigation">ACADEMIC</a></li>
-            <li><a id="nav" href="#consulting" role="navigation">CONSULTING</a></li>
-            <li><a id="nav" href="#mgmt" role="navigation">MGMT</a></li>
-            <li><a id="nav" href="#cv" role="navigation">CV</a></li>
-            <li><a id="nav" href="#contact" role="navigation">CONTACT</a></li>
-        </ul>
-    </nav>
+        <nav class="navbar navbar-expand navbar-dark">
+            <ul class="navbar-nav" v-scroll-spy-active v-scroll-spy-link>
+                <li class="nav-item"><a id="nav" class="nav-link active" href="#profile" role="navigation">HOME</a></li>
+                <li class="nav-item"><a id="nav" class="nav-link" href="#academic" role="navigation">ACADEMIC</a>
+                </li>
+                <li class="nav-item"><a id="nav" class="nav-link" href="#consulting" role="navigation">CONSULTING</a>
+                </li>
+                <li class="nav-item"><a id="nav" class="nav-link" href="#mgmt" role="navigation">MGMT</a></li>
+                <li class="nav-item"><a id="nav" class="nav-link" href="#cv" role="navigation">CV</a></li>
+                <li class="nav-item"><a id="nav" class="nav-link" href="#contact" role="navigation">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
 
-    <div class="scrolling-wrapper-flexbox" data-spy="scroll">
+    <script>
+        import Vue from 'vue';
+        import Scrollspy from 'vue2-scrollspy';
+        // use default options
+        Vue.use(Scrollspy);
+    </script>
 
-        <div class="card" id="profile">
+    <div class="scrolling-wrapper-flexbox" data-spy="scroll" data-target=".navbar">
+
+        <div class="card" id="profile" v-scroll-spy>
             <div class="row">
                 <div class="col-xs-1 col-sm-1 col-lg-3"></div>
                 <div class="col-xs-10 col-sm-10 col-lg-6">
@@ -63,7 +93,7 @@
             -->
         </div>
 
-        <div class="card" id="academic">
+        <div class="card" id="academic" v-scroll-spy>
             <div class="row">
                 <div class="col-xs-1 col-sm-1 col-lg-3">
                 </div>
@@ -71,10 +101,10 @@
                     <h1 id="academicH1">ACADEMIC</h1>
 
                     <div id="line">I'm an Assistant Professor and Senior Researcher at Oregon State University's
-                                Applied Economics Department. Ph.D., Dyson School of
-                                Applied Economics
-                                and
-                                Management, Cornell University, 2015.</div>
+                        Applied Economics Department. Ph.D., Dyson School of
+                        Applied Economics
+                        and
+                        Management, Cornell University, 2015.</div>
                     <br><br><br>
                     <h2>PUBLICATIONS</h2>
                     <div id="scholar"><a
@@ -190,7 +220,7 @@
             -->
         </div>
 
-        <div class="card" id="consulting">
+        <div class="card" id="consulting" v-scroll-spy>
             <div class="row">
                 <div class="col-xs-1 col-sm-1 col-lg-3">
                 </div>
@@ -206,7 +236,7 @@
             -->
         </div>
 
-        <div class="card" id="mgmt">
+        <div class="card" id="mgmt" v-scroll-spy>
             <div class="row">
                 <div class="col-xs-1 col-sm-1 col-lg-3">
                 </div>
@@ -222,7 +252,7 @@
             -->
         </div>
 
-        <div class="card" id="contact">
+        <div class="card" id="contact" v-scroll-spy>
             <div class="row">
                 <div class="col-xs-1 col-sm-1 col-lg-3">
                 </div>
@@ -231,7 +261,8 @@
                     <div id="line"><a href="mailto:samueldylan@gmail.com" target="_blank" class="email"
                             style="color: black">samueldylan@gmail.com</a></div>
                     <div id="line"><a style="color: black"></a>TEL (541) 908-7888</div>
-                    <div id="line"><a href="https://goo.gl/maps/bW3XHEuiHkcgaCic7" style="color: black">2725 NW Hayes Ave, Corvallis, OR
+                    <div id="line"><a href="https://goo.gl/maps/bW3XHEuiHkcgaCic7" style="color: black">2725 NW Hayes
+                            Ave, Corvallis, OR
                             97330</a></div>
                 </div>
                 <div class="col-xs-1 col-sm-1 col-lg-3"></div>
