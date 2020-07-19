@@ -5,8 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <script src="//unpkg.com/vue2-scrollspy/dist/index.js"></script>
-
 
     <!-- bootstrap JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -32,40 +30,33 @@
     <title>Samuel D. Bell</title>
 </head>
 
-<body v-scroll-spy="{data:'section'}">
+<body data-spy="scroll" data-target=".navbar">
 
     <div id="header">
         <div class="row" id=topRow>
             <div class="col-5" id="sam">SAMUEL D. BELL</div>
             <div class="col-7">
-                <div class="row" id="osu">Oregon State, Applied Economics</div>
-                <div class="row" id="vitaLite">Executive Chairman, Vitalite</div>
+                <div class="row" id="osu">Executive Chairman, Vitalite</div>
+                <div class="row" id="vitaLite">Oregon State, Applied Economics</div>
+                <div class="row" id="vitaLite"><a href="mailto:samueldylan@gmail.com" target="_blank"
+                        style="color: white">samueldylan@gmail.com</a></div>
             </div>
         </div>
         <nav class="navbar navbar-expand navbar-dark">
-            <ul class="navbar-nav" v-scroll-spy-active v-scroll-spy-link>
+            <ul class="navbar-nav">
                 <li class="nav-item"><a id="nav" class="nav-link active" href="#profile" role="navigation">HOME</a></li>
-                <li class="nav-item"><a id="nav" class="nav-link" href="#academic" role="navigation">ACADEMIC</a>
-                </li>
                 <li class="nav-item"><a id="nav" class="nav-link" href="#consulting" role="navigation">CONSULTING</a>
                 </li>
+                <li class="nav-item"><a id="nav" class="nav-link" href="#academic" role="navigation">ACADEMIC</a>
+                </li>
                 <li class="nav-item"><a id="nav" class="nav-link" href="#mgmt" role="navigation">MGMT</a></li>
-                <li class="nav-item"><a id="nav" class="nav-link" href="#cv" role="navigation">CV</a></li>
-                <li class="nav-item"><a id="nav" class="nav-link" href="#contact" role="navigation">CONTACT</a></li>
             </ul>
         </nav>
     </div>
 
-    <script>
-        import Vue from 'vue';
-        import Scrollspy from 'vue2-scrollspy';
-        // use default options
-        Vue.use(Scrollspy);
-    </script>
+    <div class="scrolling-wrapper-flexbox">
 
-    <div class="scrolling-wrapper-flexbox" data-spy="scroll" data-target=".navbar">
-
-        <div class="card" id="profile" v-scroll-spy>
+        <div class="card" id="profile">
             <div class="row">
                 <div class="col-xs-1 col-sm-1 col-lg-3"></div>
                 <div class="col-xs-10 col-sm-10 col-lg-6">
@@ -81,19 +72,36 @@
                                 Applied Economics Department. Ph.D., Dyson School of
                                 Applied Economics
                                 and
-                                Management, Cornell University, 2015.</div>
+                                Management, Cornell University, 2015.<br><br><br><br></div>
+                            <div id="cv">CV</div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-1 col-sm-1 col-lg-3">
                 </div>
             </div>
-            <!--
-                <a id="fwd" href="#academic"><img class="next" src="chevron-forward-circle-outline.svg"></a>
-            -->
+
+            <a id="fwd" href="#consulting"><img class="next" src="chevron-forward-circle-outline.svg"></a>
+
         </div>
 
-        <div class="card" id="academic" v-scroll-spy>
+        <div class="card" id="consulting">
+            <div class="row">
+                <div class="col-xs-1 col-sm-1 col-lg-3">
+                </div>
+                <div class="col-xs-10 col-sm-10 col-lg-6">
+                    <h1>CONSULTING</h1>
+                </div>
+                <div class="col-xs-1 col-sm-1 col-lg-3">
+                </div>
+            </div>
+
+            <a id="prev" href="#profile"><img class="prev" src="chevron-back-circle-outline.svg"></a>
+            <a id="fwd" href="#academic"><img class="next" src="chevron-forward-circle-outline.svg"></a>
+
+        </div>
+
+        <div class="card" id="academic">
             <div class="row">
                 <div class="col-xs-1 col-sm-1 col-lg-3">
                 </div>
@@ -214,29 +222,13 @@
                 <div class="col-xs-1 col-sm-1 col-lg-3">
                 </div>
             </div>
-            <!--
-            <a id="prev" href="#profile"><img class="prev" src="chevron-back-circle-outline.svg"></a>
-            <a id="fwd" href="#consulting"><img class="next" src="chevron-forward-circle-outline.svg"></a>
-            -->
-        </div>
 
-        <div class="card" id="consulting" v-scroll-spy>
-            <div class="row">
-                <div class="col-xs-1 col-sm-1 col-lg-3">
-                </div>
-                <div class="col-xs-10 col-sm-10 col-lg-6">
-                    <h1>CONSULTING</h1>
-                </div>
-                <div class="col-xs-1 col-sm-1 col-lg-3">
-                </div>
-            </div>
-            <!--
-            <a id="prev" href="#academic"><img class="prev" src="chevron-back-circle-outline.svg"></a>
+            <a id="prev" href="#consulting"><img class="prev" src="chevron-back-circle-outline.svg"></a>
             <a id="fwd" href="#mgmt"><img class="next" src="chevron-forward-circle-outline.svg"></a>
-            -->
+
         </div>
 
-        <div class="card" id="mgmt" v-scroll-spy>
+        <div class="card" id="mgmt">
             <div class="row">
                 <div class="col-xs-1 col-sm-1 col-lg-3">
                 </div>
@@ -246,30 +238,9 @@
                 <div class="col-xs-1 col-sm-1 col-lg-3">
                 </div>
             </div>
-            <!--
-            <a id="prev" href="#mgmt"><img class="prev" src="chevron-back-circle-outline.svg"></a>
-            <a id="fwd" href="#contact"><img class="next" src="chevron-forward-circle-outline.svg"></a>
-            -->
-        </div>
 
-        <div class="card" id="contact" v-scroll-spy>
-            <div class="row">
-                <div class="col-xs-1 col-sm-1 col-lg-3">
-                </div>
-                <div class="col-xs-10 col-sm-10 col-lg-6">
-                    <h1>CONTACT</h1>
-                    <div id="line"><a href="mailto:samueldylan@gmail.com" target="_blank" class="email"
-                            style="color: black">samueldylan@gmail.com</a></div>
-                    <div id="line"><a style="color: black"></a>TEL (541) 908-7888</div>
-                    <div id="line"><a href="https://goo.gl/maps/bW3XHEuiHkcgaCic7" style="color: black">2725 NW Hayes
-                            Ave, Corvallis, OR
-                            97330</a></div>
-                </div>
-                <div class="col-xs-1 col-sm-1 col-lg-3"></div>
-            </div>
-            <!--
-            <a id="prev" href="#mgmt"><img class="prev" src="chevron-back-circle-outline.svg"></a>
-            -->
+            <a id="prev" href="#academic"><img class="prev" src="chevron-back-circle-outline.svg"></a>
+
         </div>
     </div>
 </body>

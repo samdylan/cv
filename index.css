@@ -3,6 +3,7 @@
 } */
 
 body {
+    position: relative;
     font-family: "Avenir Next";
 }
 .card, .row, .navbar, #nav, #header,
@@ -15,15 +16,15 @@ body {
     position: absolute;
     top: 0;
     z-index: 1;
-    background-image: url("irrigate.jpg");
+    background-image: url("sArab.jpeg"); 
+    /* background-image: url("rows.jpg");*/
     background-size: cover;
     letter-spacing: .2vw;
     padding-left: 1vw;
     padding-right: 1vw;
 }
-.navbar-nav .nav-link .active, v-scroll-spy-active {
-    color: red;
-    text-decoration: underline;
+.navbar-nav .nav-link .active {
+    color: red !important;
 }
 
 .scrolling-wrapper-flexbox {
@@ -42,7 +43,7 @@ body {
 }
 
 #sam, #osu, #vitaLite, #nav {
-    color: white    ;
+    color: white;
     filter: drop-shadow(.1px .1px 9px black);
 }
 #sam {
@@ -99,20 +100,21 @@ body {
 
 
 
-/*
+
 #fwd {
     position: absolute;
-    top: 50vh;
+    top: 50%;
+    bottom: 50%
 }
 #prev {
     position: absolute;
-    top: 50vh;
+    top: 50%;
+    bottom: 50%;
 }
 img.next, img.prev {
-    height: 3vh;
-    opacity: .8;
+    height: 3.75vh;
+    opacity: .5;
 }
-*/
 
 
 #line {
@@ -148,6 +150,12 @@ h1, h2 {
     padding-top: 0;
 }
 
+#cv {
+    font-size: 3vh;
+    letter-spacing: .25em;
+    padding: 2vh 2vw;
+    border: .1px solid black;
+}
 
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
