@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
     <!-- bootstrap JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -16,16 +15,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
     <!-- bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-
     <link rel="stylesheet" type="text/css" href="index.css">
-
     <link rel="shortcut icon" type="image/png" href="earth.png">
     <title>Samuel D. Bell</title>
 </head>
@@ -42,7 +35,7 @@
                         style="color: white">samueldylan@gmail.com</a></div>
             </div>
         </div>
-        <nav class="navbar navbar-expand navbar-dark">
+        <nav class="navbar navbar-expand navbar-inverse navbar-dark">
             <ul class="navbar-nav">
                 <li class="nav-item"><a id="nav" class="nav-link active" href="#profile" role="navigation">HOME</a></li>
                 <li class="nav-item"><a id="nav" class="nav-link" href="#consulting" role="navigation">CONSULTING</a>
@@ -243,6 +236,120 @@
 
         </div>
     </div>
+
+
+    <!-- SCROLLSPY SCRIPT */ -->
+    <script>
+
+        !function ($) {
+
+            "use strict"
+
+            /* SCROLLSPY CLASS DEFINITION
+             * ========================== */
+
+            function ScrollSpy(element, options) {
+                var process = $.proxy(this.process, this)
+                    , $element = $(element).is('body') ? $(window) : $(element)
+                    , href
+                this.options = $.extend({}, $.fn.scrollspy.defaults, options)
+                this.$scrollElement = $element.on('scroll.scroll.data-api', process)
+                this.selector = (this.options.target
+                    || ((href = $(element).attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '')) //strip for ie7
+                    || '') + ' .nav li > a'
+                this.$body = $('body').on('click.scroll.data-api', this.selector, process)
+                this.refresh()
+                this.process()
+            }
+
+            ScrollSpy.prototype = {
+
+                constructor: ScrollSpy
+
+                , refresh: function () {
+                    this.targets = this.$body
+                        .find(this.selector)
+                        .map(function () {
+                            var href = $(this).attr('href')
+                            return /^#\w/.test(href) && $(href).length ? href : null
+                        })
+
+                    this.offsets = $.map(this.targets, function (id) {
+                        return $(id).position().left
+                    })
+                }
+
+                , process: function () {
+                    var scrollLeft = this.$scrollElement.scrollLeft() + this.options.offset
+                        , offsets = this.offsets
+                        , targets = this.targets
+                        , activeTarget = this.activeTarget
+                        , i
+
+                    for (i = offsets.length; i--;) {
+                        activeTarget != targets[i]
+                            && scrollLeft >= offsets[i]
+                            && (!offsets[i + 1] || scrollLeft <= offsets[i + 1])
+                            && this.activate(targets[i])
+                    }
+                }
+
+                , activate: function (target) {
+                    var active
+
+                    this.activeTarget = target
+
+                    this.$body
+                        .find(this.selector).parent('.active')
+                        .removeClass('active')
+
+                    active = this.$body
+                        .find(this.selector + '[href="' + target + '"]')
+                        .parent('li')
+                        .addClass('active')
+
+                    if (active.parent('.dropdown-menu')) {
+                        active.closest('li.dropdown').addClass('active')
+                    }
+                }
+
+            }
+
+
+            /* SCROLLSPY PLUGIN DEFINITION
+             * =========================== */
+
+            $.fn.scrollspy = function (option) {
+                return this.each(function () {
+                    var $this = $(this)
+                        , data = $this.data('scrollspy')
+                        , options = typeof option == 'object' && option
+                    if (!data) $this.data('scrollspy', (data = new ScrollSpy(this, options)))
+                    if (typeof option == 'string') data[option]()
+                })
+            }
+
+            $.fn.scrollspy.Constructor = ScrollSpy
+
+            $.fn.scrollspy.defaults = {
+                offset: 10
+            }
+
+
+            /* SCROLLSPY DATA-API
+             * ================== */
+
+            $(function () {
+                $('[data-spy="scroll"]').each(function () {
+                    var $spy = $(this)
+                    $spy.scrollspy($spy.data())
+                })
+            })
+
+        }(window.jQuery);
+
+    </script>
+
 </body>
 
 </html>
