@@ -383,7 +383,7 @@ h1, h2 {
 /* XS XS XS XS XS XS XS XS XS */
 @media (max-width: 575px) {
     .card {
-        padding-top: 25vh;
+        padding-top: 30vh;
     }
     #fwd, #prev {
         display: none;
