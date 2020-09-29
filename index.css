@@ -1,6 +1,6 @@
-/* {
+* {
     border: solid black .005px;
-} */
+} 
 
 body {
     position: relative;
@@ -16,30 +16,12 @@ body {
     position: absolute;
     top: 0;
     z-index: 1;
-    background-image: url("delta.jpeg");
+    background-image: url("delta2.png");
     background-position: top;
     background-size: cover;
     letter-spacing: .2vw;
     padding-left: 1vw;
     padding-right: 1vw;
-}
-.navbar-nav .nav-link .active {
-    color: red !important;
-}
-
-.scrolling-wrapper-flexbox {
-    display: flex;
-    flex-wrap: nowrap;
-
-    height: 100vh;
-    overflow-y: hidden;
-   /* white-space: nowrap; */
-
-    scroll-margin: 0;
-    scroll-padding: 0;
-    scroll-snap-type: both mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: auto;
 }
 
 #sam, #osu, #vitaLite, #nav {
@@ -57,18 +39,26 @@ body {
 .navbar-nav {
     padding-top: 9.5vh;
     padding-bottom: 1vh;
-}
-.navbar-nav {
     flex-grow: 1;
     display: inline-flex; /* important! */
     justify-content: space-between;
 }
-
-
-
 /* nav */
 
+
+.scrolling-wrapper-flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100vh;
+    overflow-y: hidden;
+    scroll-margin: 0;
+    scroll-padding: 0;
+    scroll-snap-type: both mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: auto;
+}
 .card {
+    display: inline-block;
     padding-top: 35vh;
     height: auto;
     flex: 0 0 auto;
@@ -335,6 +325,10 @@ h1, h2 {
 /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
 /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
 @media (min-width: 576px) and (max-width: 767px) {
+    .card {
+        padding-top: 30vh;
+    }   
+    
     #fwd {
         right: 3vw;
     }
@@ -388,13 +382,13 @@ h1, h2 {
 /* XS XS XS XS XS XS XS XS XS */
 /* XS XS XS XS XS XS XS XS XS */
 @media (max-width: 575px) {
-    #fwd {
+    .card {
+        padding-top: 25vh;
+    }
+    #fwd, #prev {
         display: none;
     }
-
-    #prev {
-        display: none;
-    }
+  
     #header {
         margin: 0;
     }
