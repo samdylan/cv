@@ -14,14 +14,13 @@ body {
 }
 #header {
     position: absolute;
-    top: 0;
     z-index: 1;
     background-image: url("delta2.png");
     background-position: top;
     background-size: cover;
     letter-spacing: .2vw;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 #sam, #osu, #vitaLite, #nav {
@@ -38,7 +37,7 @@ body {
 
 .navbar-nav {
     padding-top: 9.5vh;
-    padding-bottom: 1vh;
+    padding-bottom: 2vh;
     flex-grow: 1;
     display: inline-flex; /* important! */
     justify-content: space-between;
@@ -103,7 +102,7 @@ body {
 }
 img.next, img.prev {
     height: 3.75vh;
-    opacity: .5;
+    opacity: .25;
 }
 
 
@@ -151,14 +150,14 @@ h1, h2 {
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
 @media (min-width: 1200px) {
     #fwd {
-        right: 20vw;
+        right: 10vw;
     }
     #prev {
-        left: 20vw;
+        left: 10vw;
     }
 
     #header {
-        margin: 0 25vw;
+        margin: 0 15vw;
     }
     #topRow {
         padding: 2vh 0 0 0;
@@ -210,14 +209,14 @@ h1, h2 {
 /* LARGE LARGE LARGE LARGE LARGE LARGE */
 @media (min-width: 992px) and (max-width: 1199px) {
     #fwd {
-        right: 20vw;
+        right: 10vw;
     }
 
     #prev {
-        left: 20vw;
+        left: 10vw;
     }
     #header {
-        margin: 0 25vw;
+        margin: 0 15vw;
     }
     #topRow {
         padding: 2vh 0 0 0;
