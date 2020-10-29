@@ -72,9 +72,9 @@ body {
 
 #profile,#consulting,#mgmt,#contact {
     width: 100vw;
-    background: url("filterLong.png");
+    /* background: url("filterLong.png");
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     overflow-y: scroll;
 }
 
