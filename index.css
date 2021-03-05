@@ -34,7 +34,10 @@ body {
     float: right;
     letter-spacing: .18vw;
 }
-
+#header {
+    position: fixed;
+    z-index: 1;
+}
 .navbar-nav {
     padding-top: 9.5vh;
     padding-bottom: 2vh;
@@ -43,7 +46,6 @@ body {
     justify-content: space-between;
 }
 /* nav */
-
 
 .scrolling-wrapper-flexbox {
     display: flex;
@@ -58,7 +60,6 @@ body {
 }
 .card {
     display: inline-block;
-    padding-top: 35vh;
     height: auto;
     flex: 0 0 auto;
     -webkit-overflow-scrolling: auto;
@@ -66,6 +67,7 @@ body {
     scroll-snap-stop: always;
     scroll-behavior: smooth;
 }
+#consulting, #academic, #mgmt { padding-top: 15vh;}
 #academicH1 {
     scroll-snap-align: start;
 }
@@ -81,15 +83,12 @@ body {
 #academic {
     height: auto;
     width: 100vw;
-
     overflow-y: scroll;
     overflow-x:hidden;
     display: inline-block;
 }
 
-
-
-
+/*
 #fwd {
     position: absolute;
     top: 50%;
@@ -104,7 +103,7 @@ img.next, img.prev {
     height: 3.75vh;
     opacity: .25;
 }
-
+*/
 
 #line {
     letter-spacing: .109em;
@@ -122,8 +121,7 @@ h1, h2 {
     font-weight: 250;
     letter-spacing: .2em;
 }
-
-#subheading {
+#subhead, #subsubheading {
     font-weight: 300;
     letter-spacing: .2em;
     line-height: 5vh;
@@ -144,6 +142,10 @@ h1, h2 {
     letter-spacing: .25em;
     padding: 2vh 2vw;
     border: .1px solid black;
+}
+
+.consulting, .academic {
+    padding-top: 20vh;
 }
 
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
@@ -185,12 +187,15 @@ h1, h2 {
         width: 12.5vw;
     }
 
+    #profile { padding-top: 50vh;}
+
     h1 {
         font-size: 2.25vw;
     }
     h2 {font-size: 1.9vw;}
-    #subheading {
-        font-size: 1.5vw;
+    #subhead { font-size: 1.55vw;}
+    #subsubheading {
+        font-size: 1.2vw;
     }
     #summary {
         font-size: 1.95vh;
@@ -222,7 +227,6 @@ h1, h2 {
         padding: 2vh 0 0 0;
     }
 
-
     #nav {
         font-size: 1.35vw;
     }
@@ -244,6 +248,8 @@ h1, h2 {
         width: 15vw;
         margin: 0vh;
     }
+
+    #profile { padding-top: 35vh;}
 
     h1 {
         font-size: 2.5vw;
@@ -299,6 +305,8 @@ h1, h2 {
         width: 20vw;
         margin: 0vh;
     }
+
+    #profile { padding-top: 35vh;}
 
     h1 {
         padding-top: 5vh;
@@ -356,6 +364,7 @@ h1, h2 {
         width: 20vw;
         margin: 0vh;
     }
+    #profile { padding-top: 32.5vh;}
 
     h1 {
         padding-top: 5vh;
@@ -412,6 +421,7 @@ h1, h2 {
         width: 30vw;
     }
 
+    #profile { padding-top: 30vh;}
     h1 {
         padding-top: 5vh;
         font-size: 4.75vw;
